@@ -41,7 +41,6 @@ class Transactions extends Component {
     handlePageChange = page => {
         this.setState({currentPage: page});
     };
-
     filterEvent = transaction => {
         let transactionFormated = transaction.date.substring(0,10).split('-').join('');
         let fromDateFormated = this.state.filterDates.fromDate;
@@ -56,6 +55,8 @@ class Transactions extends Component {
         await this.setTransactions();
 
         let dateFilter = {...this.state.filterDates};
+        // Necessary because new Date toLocaleDateString returns date without 0's
+        //returns 8/9/2022 instead of 08/09/2022
         let fromDateFilter = changeDate.startDate._d.toISOString().substring(0,10).split('-');
         let tillDateFilter = changeDate.endDate._d.toISOString().substring(0,10).split('-');
         fromDateFilter = fromDateFilter[1] + '/'+ fromDateFilter[2] +'/' + fromDateFilter[0];
@@ -103,7 +104,7 @@ class Transactions extends Component {
             <Suspense fallback='Loading ...'>
             <div className="row">
                 <div className="col">
-                <LanguageSwitcher />
+                    <LanguageSwitcher />
                     <span className='pieCharts'>
                         <span>{i18next.t('sender/credit')}</span> 
                         <PieCharts 
