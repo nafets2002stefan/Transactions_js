@@ -1,0 +1,80 @@
+#root{
+  text-align: center;  
+}
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.clickable {
+  cursor: pointer;
+} 
+
+select.form-select{
+  color: gray;
+  font-size: .8rem;
+  border-color: gray;
+  border-radius: .2rem;
+  font-weight: 500;
+} 
+
+p.selectBox{
+  display:inline-block;
+  color: gray;
+  font-weight: 500;
+}
+
+.title-transaction-grid{
+  color: black;
+}
+
+.pieCharts{
+  position: relative;
+}
+
+.pieCharts span{
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+  font-size: large;
+  color: gray;
+}
+
+.pieCharts svg{
+  width: 35%;
+  height: 30%;
+  margin: 4rem 4rem 4rem;
+}
+
+.filterDateBtn{
+  display: block;
+  /* float: left; */
+  margin-top: .5rem;
+  margin-bottom: 1rem;  
+}
+
+.filterSpan{
+  font-weight: 600;
+  margin-right: 2rem;
+}
+
+select.custom-select{
+  display: block;
+  width: 20%;
+  margin: 1rem 20rem;
+  transform: translateX(20rem);
+}
+
+.daterangepicker{
+  transform: translateX(38rem);
+}

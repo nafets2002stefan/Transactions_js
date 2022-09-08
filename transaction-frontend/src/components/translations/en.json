@@ -1,0 +1,14 @@
+{
+    "sender/credit": "Sender/Credit Amount",
+    "reciever/debit": "Reciever/Debit Amount",
+    "transactionsTable": "Transactions Table",
+    "showingTransactions": "Showing {{totalCount}} transactions in the database.",
+    "dataRange": "Filter by data range",
+    "pagesNumber": "Select the number of items per page",
+    "debit": "Debit Amount",
+    "credit": "Credit Amount",
+    "sender": "Sender",
+    "reciever": "Reciever",
+    "date": "Date"
+
+}

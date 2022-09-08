@@ -1,0 +1,15 @@
+{
+    "sender/credit": "שׁוֹלֵחַ/סכום אשראי",
+    "reciever/debit": "מקלט/סכום החיוב",
+    "transactionsTable" : "טבלת עסקאות",
+    "showingTransactions": "מציג {{totalCount}} עסקאות במסד הנתונים.",
+    "dataRange": "סנן לפי טווח נתונים",
+    "pagesNumber": "בחר את מספר הפריטים בעמוד",
+    "debit": "סכום החיוב",
+    "credit": "סכום אשראי",
+    "sender": "שׁוֹלֵחַ",
+    "reciever": "מקלט",
+    "date": "תַאֲרִיך"
+
+
+}
